@@ -1,0 +1,17 @@
+- About Shells, Terminal, virtual consoles and how to use them
+- Choosing a shell
+- Running commands
+    - Understand command syntax
+    - Locating commands
+- Recalling commands
+    - Command line edit, completion, recall
+- Connecting and Expanding Commands
+    - Piping between commands
+    - Sequential commands
+    - Background commands
+    - Expanding commands
+    - Expanding arithmetic expressions
+    - Expanding variables
+- Using Shell Variables
+- Creating your shell environment
+- Get information about commands
