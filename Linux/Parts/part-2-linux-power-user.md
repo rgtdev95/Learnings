@@ -26,40 +26,84 @@ This section covers essential command-line skills to become proficient with the 
 
 - [Part 2 Quiz](../Quiz/Part-2/part-2-quiz.md) - 36 questions with collapsible answers
 
+### 📂 Section 2: Moving Around the Filesystem
+
+| # | Topic | Notes File |
+|---|-------|------------|
+| 8 | Filesystem Hierarchy | [08-filesystem-hierarchy.md](../Notes/part-2/08-filesystem-hierarchy.md) |
+| 9 | Navigating & Managing | [09-navigating-managing-files.md](../Notes/part-2/09-navigating-managing-files.md) |
+| 10 | Permissions & Ownership | [10-permissions-ownership.md](../Notes/part-2/10-permissions-ownership.md) |
+| 11 | Moving, Copying, Deleting | [11-moving-copying-deleting.md](../Notes/part-2/11-moving-copying-deleting.md) |
+
+### 📝 Section 3: Working with Text Files
+
+| # | Topic | Notes File |
+|---|-------|------------|
+| 12 | Editing with Vim | [12-editing-with-vim.md](../Notes/part-2/12-editing-with-vim.md) |
+| 13 | Finding Files | [13-finding-files.md](../Notes/part-2/13-finding-files.md) |
+| 14 | Searching Text | [14-searching-text-grep.md](../Notes/part-2/14-searching-text-grep.md) |
+
+### ⚙️ Section 4: Managing Processes
+
+| # | Topic | Notes File |
+|---|-------|------------|
+| 15 | Viewing Processes | [15-viewing-processes.md](../Notes/part-2/15-viewing-processes.md) |
+| 16 | Job Control | [16-background-foreground-jobs.md](../Notes/part-2/16-background-foreground-jobs.md) |
+| 17 | Killing & Renicing | [17-killing-renicing-processes.md](../Notes/part-2/17-killing-renicing-processes.md) |
+
+### 📜 Section 5: Shell Scripting
+
+| # | Topic | Notes File |
+|---|-------|------------|
+| 18 | Script Basics | [18-shell-script-basics.md](../Notes/part-2/18-shell-script-basics.md) |
+| 19 | Control Flow | [19-control-flow-arithmetic.md](../Notes/part-2/19-control-flow-arithmetic.md) |
+| 20 | Loops & Filters | [20-loops-text-filters.md](../Notes/part-2/20-loops-text-filters.md) |
+| 21 | Sample Scripts | [21-sample-scripts.md](../Notes/part-2/21-sample-scripts.md) |
+
 ---
 
-## Learning Objectives
+## 🎯 Learning Objectives
 
-After completing Part 2, you should be able to:
+By the end of this part, you should be able to:
+- **Understand Shells:** Distinguish between shells, terminals, and consoles.
+- **Run Commands:** Execute commands with options, arguments, and proper syntax.
+- **Manage History:** Recall and edit previous commands efficiently.
+- **Connect Commands:** Use pipes and redirection to build complex workflows.
+- **Navigate Filesystem:** Understand the Linux directory tree and move around (`cd`, `pwd`).
+- **Manage Files:** Create, copy, move, and delete files and directories.
+- **Control Permissions:** Understand and modify file permissions (`chmod`, `chown`).
+- **Edit Text:** Use `vim` to create and modify files mainly.
+- **Find Content:** Locate files (`find`) and search text content (`grep`).
+- **Manage Processes:** View (`ps`, `top`), kill (`kill`), and manage background jobs.
+- **Write Scripts:** Create basic shell scripts with variables, loops, and logic.
+- **Use Documentation:** Find help using `man`, `info`, and `--help`.
 
-- [ ] Explain the difference between shells, terminals, and virtual consoles
-- [ ] Understand command syntax and locate commands
-- [ ] Use command history and line editing efficiently
-- [ ] Connect commands with pipes and redirections
-- [ ] Work with shell and environment variables
-- [ ] Customize your shell environment
-- [ ] Find help and documentation for any command
-
----
-
-## Key Commands Covered
+## ⌨️ Key Commands
 
 ```bash
-# Shell Information
-echo $SHELL              # Current shell
-cat /etc/shells          # Available shells
-chsh -s /bin/zsh         # Change default shell
+# Shell & History
+history, !, !!, fc, alias, export, echo
 
-# Command Location
-which command            # Find in PATH
-type command             # Show interpretation
-whereis command          # Find binary, source, man
+# Getting Info
+man, info, help, type, which, whatis
 
-# History & Editing
-history                  # View history
-!!                       # Repeat last command
-!$                       # Last argument
-Ctrl+R                   # Reverse search
+# Filesystem Navigation
+cd, pwd, ls, mkdir, rmdir
+
+# File Management
+cp, mv, rm, touch, file
+
+# Permissions
+chmod, chown, umask, id, groups
+
+# Processes
+ps, top, jobs, kill, killall, nice, renice, fg, bg
+
+# Text & Search
+vi, vim, find, locate, grep, updatedb
+
+# Scripting
+bash, sh, chmod, read, test, expr, let, cut, tr, sed, awk
 
 # Pipes & Redirection
 cmd1 | cmd2              # Pipe

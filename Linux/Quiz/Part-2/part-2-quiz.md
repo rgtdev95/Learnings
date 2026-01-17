@@ -1,3 +1,4 @@
+```
 # Part 2: Linux Power User - Quiz & Flashcards
 
 > **How to use:** Click on "Answer" to reveal the answer. Test yourself before revealing!
@@ -645,4 +646,132 @@ Example: `export TMOUT=1800` log out after 30 minutes (1800 seconds) of no input
 
 ---
 
-*Quiz based on Linux Bible 10th Edition - Part 2: Becoming a Linux Power User*
+---
+
+## Topic 9: Filesystem Hierarchy & Navigation
+
+**Q41:** What is the parent directory of `/home/joe/Documents`?
+<details>
+<summary>Answer</summary>
+
+`/home/joe`
+
+(You can go there by typing `cd ..` from the Documents directory)
+
+</details>
+
+---
+
+**Q42:** Which directory typically contains system configuration files?
+<details>
+<summary>Answer</summary>
+
+`/etc`
+
+Examples: `/etc/passwd`, `/etc/bashrc`
+
+</details>
+
+---
+
+**Q43:** What wildcard matches **any** number of characters?
+<details>
+<summary>Answer</summary>
+
+`*` (Asterisk)
+
+Example: `ls *.txt` matches all files ending in .txt.
+
+</details>
+
+---
+
+## Topic 10: Permissions & Management
+
+**Q44:** Convert the permission `rwx r-x r--` to a 3-digit number.
+<details>
+<summary>Answer</summary>
+
+**754**
+
+- Owner: `rwx` (4+2+1) = 7
+- Group: `r-x` (4+0+1) = 5
+- Other: `r--` (4+0+0) = 4
+
+</details>
+
+---
+
+**Q45:** What command copies a directory **recursively**?
+<details>
+<summary>Answer</summary>
+
+```bash
+cp -r source_dir dest_dir
+```
+
+(or `cp -a` to archive/preserve attributes)
+
+</details>
+
+---
+
+**Q46:** How do you rename a file from `old.txt` to `new.txt`?
+<details>
+<summary>Answer</summary>
+
+```bash
+mv old.txt new.txt
+```
+
+</details>
+
+---
+
+**Q47:** What command changes the owner of a file?
+<details>
+<summary>Answer</summary>
+
+`chown`
+
+Example: `sudo chown user:group file.txt`
+
+</details>
+
+---
+
+**Q48:** What does `rm -rf /` do? (DO NOT RUN THIS)
+<details>
+<summary>Answer</summary>
+
+It **forces recursive deletion** starting from the root directory. This effectively **wipes the entire system**.
+
+</details>
+
+---
+
+## Bonus: Filesystem True/False
+
+**Q49-53:** True or False?
+
+<details>
+<summary>Questions</summary>
+
+49. Linux uses backslashes `\` for directory paths.
+50. `chmod 777` gives full permissions to everyone.
+51. You cannot recover a file deleted with `rm`.
+52. `root` user's home directory is `/home/root`.
+53. `cd -` takes you to the previous working directory.
+
+</details>
+
+<details>
+<summary>Answers</summary>
+
+49. **FALSE** - Linux uses forward slashes `/`.
+50. **TRUE** - Read, Write, Execute for User, Group, and Others.
+51. **TRUE** - There is no standard "Recycle Bin" for the shell.
+52. **FALSE** - It is usually just `/root`.
+53. **TRUE** - It swaps between current and previous directory.
+
+</details>
