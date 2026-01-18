@@ -27,3 +27,4 @@
 - Authentik
 - Komodo for docker monitoring
 - Netalertx for network monitoring | enable SNMP with grafana
+- N8N
