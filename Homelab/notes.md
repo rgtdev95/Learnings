@@ -11,3 +11,19 @@
 8. Implement monitoring with Prometheus and Grafana
 9. Implement backup with Veeam
 10. Use the Synology as NAS and backup for everything even file storage
+
+
+# Apps
+- Technitium DNS Server
+- Wazuh
+- Elastic Stack
+- Prometheus
+- Grafana
+- Coder.com
+- Vaultwarden
+- Portainer
+- Siyuan - https://github.com/siyuan-note/siyuan?tab=readme-ov-file#-introduction
+- Postgresql for main database
+- Authentik
+- Komodo for docker monitoring
+- Netalertx for network monitoring | enable SNMP with grafana
